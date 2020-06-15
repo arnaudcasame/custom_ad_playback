@@ -49,7 +49,7 @@
         }
         initialized = true;
 
-        google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+        google.ima.settings.setDisableCustomPlaybackForIOS10Plus(false);
         google.ima.settings.setLocale('en');
         google.ima.settings.setNumRedirects(5);
 
@@ -180,7 +180,7 @@
 
         const seekButton = document.querySelector('#seek');
         seekButton.addEventListener('click', function() {
-            document.querySelector('video').currentTime = 15;
+            video.currentTime = 15;
         });
 
         function adImpression(adsManagerEvent) {
