@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IMA video.src shared breaks iOS seek</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <script src="//imasdk.googleapis.com/js/sdkloader/ima3_debug.js"></script>
+  <style>
+    video {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div>
+      <header>
+        IMA video.src shared breaks iOS seek
+      </header>
+      <main>
+        <p>Click the video to begin.</p>
+        <div class="container">
+          <video id="video" width="640" height="360" controls playsinline></video>
+          <div id="ad-container"></div>
+        </div>
+        <button id="stop">Stop Ads Manager</button>
+        <button id="skip">Skip Ad</button>
+        <button id="seek">Seek</button>
+        <div>
+          <pre id="log"></pre>
+        </div>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
