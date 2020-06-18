@@ -20,17 +20,21 @@
       <main>
         <p>Click the video to begin.</p>
         <div class="container">
-          <video id="video" width="640" height="360" controls playsinline></video>
-          <div id="ad-container"></div>
+          <video id="contentElement" width="640" height="360" controls playsinline>
+            <source src="//content.jwplatform.com/videos/ayG707fn-KThtkKLX.mp4"></source>
+          </video>
+          <div id="adContainer"></div>
         </div>
         <button id="stop">Stop Ads Manager</button>
         <button id="skip">Skip Ad</button>
         <button id="seek">Seek</button>
+        <button id="playButton">Play</button>
         <div>
           <pre id="log"></pre>
         </div>
       </main>
     </div>
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./ad.js"></script>
   </body>
 </html>
